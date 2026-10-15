@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Virtualization-Platforms/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Virtualization-Platforms?style=flat-square&logo=github&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Virtualization-Platforms/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Virtualization-Platforms?style=flat-square&logo=github&color=gold" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Virtualization-Platforms/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Virtualization-Platforms?style=flat-square&logo=github&color=blue" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Virtualization-Platforms/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Virtualization-Platforms?style=flat-square" alt="Issues"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Virtualization-Platforms/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a>
@@ -71,10 +71,10 @@ The following table benchmarks dominant commercial virtualization suites and pub
 
 Below is an extensive collection of open-source hypervisors, virtualization APIs, microVM engines, and private cloud management platforms.
 
-> 🌟 **Sorted strictly by GitHub Star Count in descending order.**  
-> 🏷️ *Each repository includes a dynamic social star badge linking directly to that project's stargazers page.*
+> 🌟 **Sorted strictly by GitHub Stars_Count in descending order.**  
+> 🏷️ *Each repository includes a dynamic social Stars_Badge linking directly to that project's stargazers page.*
 
-| # | Project / Repository | Stars Badge | Primary Category | Description |
+| # | Project / Repository | Stars_Badge | Primary Category | Description |
 | :-: | :--- | :--- | :--- | :--- |
 | **1** | **[Linux Kernel (KVM)](https://github.com/torvalds/linux)** | [![Stars](https://img.shields.io/github/stars/torvalds/linux?style=social&color=white)](https://github.com/torvalds/linux/stargazers) | Kernel Hypervisor Module | The mainline Linux kernel containing the **KVM (Kernel-based Virtual Machine)** kernel module (`kvm.ko`), converting Linux into a Type-1 bare-metal hypervisor powering modern cloud computing. |
 | **2** | **[Firecracker](https://github.com/firecracker-microvm/firecracker)** | [![Stars](https://img.shields.io/github/stars/firecracker-microvm/firecracker?style=social&color=white)](https://github.com/firecracker-microvm/firecracker/stargazers) | MicroVM VMM (Rust) | Minimalist, ultra-fast Virtual Machine Monitor built by Amazon in Rust. Launches isolated microVMs in <5ms with a memory footprint <5 MiB; powers AWS Lambda, Fargate, and secure serverless runtimes. |
@@ -206,7 +206,7 @@ Contributions are warmly encouraged! Help keep this virtualization guide accurat
 1. 🍴 **Fork the Repository** on GitHub.
 2. 🌿 **Create a New Branch** (`git checkout -b feature/add-new-platform`).
 3. 📝 **Add or Update Entries**: Maintain factual descriptions, exact starting tier prices, specific trial limits, and direct GitHub links.
-4. ⭐ **Include the Social Star Badge** for any open-source project added:
+4. ⭐ **Include the Social Stars_Badge** for any open-source project added:
    ```markdown
    [![Stars](https://img.shields.io/github/stars/<owner>/<repo>?style=social&color=white)](https://github.com/<owner>/<repo>/stargazers)
    ```
