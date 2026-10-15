@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 280" width="100%" height="280">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1e" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- Glowing Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="node-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.8" stroke-opacity="0.6" />
+      <circle cx="40" cy="0" r="1.5" fill="#38bdf8" fill-opacity="0.3" />
+    </pattern>
+
+    <style>
+      @keyframes pulse-ring {
+        0% { r: 6px; opacity: 0.8; }
+        50% { r: 16px; opacity: 0.2; }
+        100% { r: 6px; opacity: 0.8; }
+      }
+      @keyframes float-packet-1 {
+        0% { cx: 80px; cy: 70px; opacity: 0.2; }
+        50% { cx: 280px; cy: 60px; opacity: 0.9; }
+        100% { cx: 480px; cy: 70px; opacity: 0.2; }
+      }
+      @keyframes float-packet-2 {
+        0% { cx: 880px; cy: 210px; opacity: 0.2; }
+        50% { cx: 680px; cy: 220px; opacity: 0.9; }
+        100% { cx: 480px; cy: 210px; opacity: 0.2; }
+      }
+      @keyframes wave-glow {
+        0% { opacity: 0.3; transform: scaleY(1); }
+        50% { opacity: 0.65; transform: scaleY(1.08); }
+        100% { opacity: 0.3; transform: scaleY(1); }
+      }
+      @keyframes orbit-dash {
+        to { stroke-dashoffset: -100; }
+      }
+      .anim-ring {
+        animation: pulse-ring 3.5s ease-in-out infinite;
+      }
+      .anim-packet1 {
+        animation: float-packet-1 6s ease-in-out infinite;
+      }
+      .anim-packet2 {
+        animation: float-packet-2 5.5s ease-in-out infinite;
+      }
+      .anim-line {
+        stroke-dasharray: 6 6;
+        animation: orbit-dash 12s linear infinite;
+      }
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 38px;
+        letter-spacing: -0.5px;
+      }
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 14.5px;
+        fill: #94a3b8;
+        letter-spacing: 0.2px;
+      }
+      .badge-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 11.5px;
+        fill: #e2e8f0;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="960" height="280" rx="14" fill="url(#bg-grad)" />
+  <rect width="960" height="280" rx="14" fill="url(#grid)" />
+
+  <!-- Ambient Light Orbs in Background -->
+  <circle cx="200" cy="50" r="130" fill="#38bdf8" filter="url(#glow)" opacity="0.12" />
+  <circle cx="780" cy="230" r="140" fill="#818cf8" filter="url(#glow)" opacity="0.12" />
+  <circle cx="500" cy="140" r="160" fill="#c084fc" filter="url(#glow)" opacity="0.08" />
+
+  <!-- Animated Virtualization Topologies (Deep Background Layer) -->
+  <g opacity="0.45">
+    <!-- Connecting Infrastructure Lines -->
+    <path class="anim-line" d="M 80 70 L 280 60 L 480 70 L 680 60 L 880 70" stroke="#38bdf8" stroke-width="1.5" fill="none" />
+    <path class="anim-line" d="M 80 210 L 280 220 L 480 210 L 680 220 L 880 210" stroke="#818cf8" stroke-width="1.5" fill="none" />
+    <path d="M 280 60 L 280 220 M 680 60 L 680 220" stroke="#334155" stroke-width="1.2" stroke-dasharray="4 4" fill="none" />
+    
+    <!-- Virtual Network Nodes -->
+    <circle cx="80" cy="70" r="4" fill="#38bdf8" />
+    <circle cx="280" cy="60" r="5" fill="#818cf8" />
+    <circle cx="480" cy="70" r="4" fill="#38bdf8" />
+    <circle cx="680" cy="60" r="5" fill="#818cf8" />
+    <circle cx="880" cy="70" r="4" fill="#38bdf8" />
+
+    <circle cx="80" cy="210" r="4" fill="#38bdf8" />
+    <circle cx="280" cy="220" r="5" fill="#818cf8" />
+    <circle cx="480" cy="210" r="4" fill="#38bdf8" />
+    <circle cx="680" cy="220" r="5" fill="#818cf8" />
+    <circle cx="880" cy="210" r="4" fill="#38bdf8" />
+
+    <!-- Pulsing Node Halos -->
+    <circle class="anim-ring" cx="280" cy="60" r="7" stroke="#38bdf8" stroke-width="1.5" fill="none" />
+    <circle class="anim-ring" cx="680" cy="220" r="7" stroke="#c084fc" stroke-width="1.5" fill="none" />
+
+    <!-- Moving Virtual Packet Signals -->
+    <circle class="anim-packet1" cx="80" cy="70" r="3.5" fill="#38bdf8" filter="url(#node-glow)" />
+    <circle class="anim-packet2" cx="880" cy="210" r="3.5" fill="#c084fc" filter="url(#node-glow)" />
+  </g>
+
+  <!-- High-contrast Border Frame -->
+  <rect x="1" y="1" width="958" height="278" rx="13" fill="none" stroke="#334155" stroke-width="1.2" stroke-opacity="0.7" />
+
+  <!-- Center Presentation Card (Gives perfect contrast & guarantees foreground clarity) -->
+  <rect x="50" y="32" width="860" height="216" rx="12" fill="#0b1120" fill-opacity="0.82" stroke="#1e293b" stroke-width="1.5" filter="url(#glow)" />
+
+  <!-- Inner Top Accent Border -->
+  <path d="M 50 44 Q 50 32 62 32 L 898 32 Q 910 32 910 44" fill="none" stroke="url(#accent-grad)" stroke-width="3" />
+
+  <!-- Foreground Content (Always crisp & clearly legible) -->
+  <g text-anchor="middle">
+    <!-- Icon / Badge Line -->
+    <g transform="translate(480, 72)">
+      <rect x="-115" y="-14" width="230" height="26" rx="13" fill="#1e293b" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.5" />
+      <text y="3" class="badge-text" fill="#38bdf8">⚡ HYPERVISORS &amp; CLOUD INFRASTRUCTURE</text>
+    </g>
+
+    <!-- Main Title with Gradient Fill -->
+    <text x="480" y="126" class="title-text" fill="url(#accent-grad)">Awesome Virtualization Platforms</text>
+
+    <!-- Subtitle -->
+    <text x="480" y="158" class="subtitle-text">A Curated Directory of Hypervisors, Virtual Machine Engines, Private Cloud Stacks &amp; Data Center Virtualization</text>
+
+    <!-- Feature Pills / Badges in Foreground -->
+    <g transform="translate(480, 204)">
+      <!-- Pill 1 -->
+      <g transform="translate(-320, -14)">
+        <rect width="145" height="28" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1" />
+        <circle cx="16" cy="14" r="4" fill="#38bdf8" />
+        <text x="82" y="18" text-anchor="middle" class="badge-text">Type-1 &amp; Type-2</text>
+      </g>
+      <!-- Pill 2 -->
+      <g transform="translate(-155, -14)">
+        <rect width="145" height="28" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1" />
+        <circle cx="16" cy="14" r="4" fill="#818cf8" />
+        <text x="82" y="18" text-anchor="middle" class="badge-text">KVM &amp; Xen Stacks</text>
+      </g>
+      <!-- Pill 3 -->
+      <g transform="translate(10, -14)">
+        <rect width="145" height="28" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1" />
+        <circle cx="16" cy="14" r="4" fill="#c084fc" />
+        <text x="82" y="18" text-anchor="middle" class="badge-text">MicroVMs &amp; HCI</text>
+      </g>
+      <!-- Pill 4 -->
+      <g transform="translate(175, -14)">
+        <rect width="145" height="28" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1" />
+        <circle cx="16" cy="14" r="4" fill="#34d399" />
+        <text x="82" y="18" text-anchor="middle" class="badge-text">Open Source &amp; SaaS</text>
+      </g>
+    </g>
+  </g>
+</svg>
